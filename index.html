@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ▼ REPLACE with your name -->
-  <title>Jane Smith — Portfolio</title>
+  <title>Cameron Tusa — Portfolio</title>
 
-  <!-- Fonts: Space Grotesk (headings) + Inter (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -15,7 +13,7 @@
     :root {
       --paper:   #F6F5F2;
       --ink:     #17202A;
-      --crimson: #BE2130;   /* accent — a nod to University of Utah */
+      --crimson: #BE2130;   
       --muted:   #6E7378;
       --line:    #DEDCD6;
       --card:    #FFFFFF;
@@ -32,7 +30,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ---------- Navigation ---------- */
     .nav {
       position: sticky; top: 0; z-index: 50;
       background: rgba(246,245,242,0.9);
@@ -63,7 +60,6 @@
       font-size: 1.5rem; color: var(--ink); line-height: 1;
     }
 
-    /* ---------- Layout ---------- */
     .wrap { max-width: 760px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 2.5rem); }
     section { padding: clamp(3rem, 8vw, 5rem) 0; border-bottom: 1px solid var(--line); }
     section:last-of-type { border-bottom: 0; }
@@ -74,7 +70,6 @@
       margin: 0 0 1.25rem;
     }
 
-    /* ---------- Header / Hero ---------- */
     .hero { padding-top: clamp(3.5rem, 10vw, 6rem); }
     .name {
       font-family: "Space Grotesk", sans-serif;
@@ -86,17 +81,17 @@
     .title { font-family: "Space Grotesk", sans-serif; font-weight: 500; font-size: clamp(1.15rem, 3.5vw, 1.5rem); margin: 0; }
     .school { font-size: 1.05rem; color: var(--muted); margin: 0.35rem 0 0; }
 
-    /* ---------- About ---------- */
+   
     .about-text { font-size: 1.15rem; max-width: 62ch; margin: 0; }
 
-    /* ---------- Skills ---------- */
+
     .skills { display: flex; flex-wrap: wrap; gap: 0.6rem; list-style: none; margin: 0; padding: 0; }
     .skills li {
       background: var(--card); border: 1px solid var(--line);
       border-radius: 999px; padding: 0.4rem 0.95rem; font-size: 0.95rem; font-weight: 500;
     }
 
-    /* ---------- Projects ---------- */
+  
     .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     .project {
       background: var(--card); border: 1px solid var(--line);
@@ -105,7 +100,6 @@
     .project h3 { font-family: "Space Grotesk", sans-serif; font-size: 1.1rem; margin: 0 0 0.4rem; }
     .project p { margin: 0; color: var(--muted); font-size: 0.98rem; }
 
-    /* ---------- Resume ---------- */
     .btn {
       display: inline-block; text-decoration: none;
       background: var(--crimson); color: #fff; font-weight: 600;
@@ -114,7 +108,6 @@
     .btn:hover { background: #9e1a27; }
     .resume-soon { color: var(--muted); font-size: 1.05rem; margin: 0; }
 
-    /* ---------- Contact ---------- */
     .contact { list-style: none; margin: 0; padding: 0; font-size: 1.1rem; }
     .contact li { margin-bottom: 0.6rem; }
     .contact a { color: var(--crimson); text-decoration: none; font-weight: 500; }
@@ -122,10 +115,9 @@
 
     footer { text-align: center; padding: 2rem 1rem; color: var(--muted); font-size: 0.9rem; }
 
-    /* ---------- Accessibility ---------- */
     :focus-visible { outline: 2px solid var(--crimson); outline-offset: 3px; }
 
-    /* ---------- One page-load reveal ---------- */
+ 
     .reveal { opacity: 0; transform: translateY(14px); animation: rise 0.7s cubic-bezier(0.2,0.7,0.2,1) forwards; }
     .reveal.d1 { animation-delay: 0.08s; }
     .reveal.d2 { animation-delay: 0.18s; }
@@ -152,8 +144,8 @@
   <!-- ============ NAVIGATION ============ -->
   <nav class="nav">
     <div class="nav-inner">
-      <!-- ▼ REPLACE with your name -->
-      <a href="#top" class="nav-brand">Jane Smith</a>
+  
+      <a href="#top" class="nav-brand">Cameron Tusa</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -170,9 +162,9 @@
     <!-- ============ HEADER / HERO ============ -->
     <header class="hero">
       <!-- ▼ REPLACE name, title, and school -->
-      <h1 class="name reveal">Jane Smith</h1>
+      <h1 class="name reveal">Cameron Tusa</h1>
       <hr class="rule reveal d1" />
-      <p class="title reveal d1">Information Systems Student</p>
+      <p class="title reveal d1">Marketing Student</p>
       <p class="school reveal d2">University of Utah</p>
     </header>
 
@@ -182,16 +174,7 @@
       <!-- ▼ REWRITE in your own voice, ~100–150 words.
            Must mention: major, career interests, AI interests, technical interests -->
       <p class="about-text">
-        I'm an Information Systems student at the University of Utah, where I focus on
-        the space where business problems meet technical solutions. My career interests
-        center on roles like business analyst, data analyst, and IT project management —
-        positions where I can turn what an organization needs into systems people
-        actually want to use. I'm especially interested in how artificial intelligence
-        is reshaping that work: using large language models to speed up analysis,
-        automate routine reporting, and make data more accessible to non-technical
-        teams. On the technical side, I enjoy working with SQL and relational databases,
-        Python for data analysis, and building clean, functional web interfaces. I'm
-        always looking for projects that let me learn a new tool and ship something real.
+        I'm a Marketing student at the University of Utah and I am interested in pursuing advertising as a long term career. I am curious to see how AI affects advertising in the future. I am from Orange County, California and I plan on building my career there after I graduate from the U.
       </p>
     </section>
 
@@ -200,16 +183,12 @@
       <h2 class="section-label">Skills</h2>
       <!-- ▼ EDIT this list -->
       <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>Microsoft Excel</li>
-        <li>Data Analytics</li>
-        <li>AI Prompt Engineering</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Premiere Pro</li>
+        <li>Adoble After Effects</li>
+        <li>Excel Spreadsheets</li>
+        
+       
       </ul>
     </section>
 
@@ -219,20 +198,8 @@
       <!-- ▼ UPDATE these throughout the semester -->
       <div class="projects">
         <div class="project">
-          <h3>AI Business Analysis</h3>
-          <p>Analyze business data using ChatGPT.</p>
-        </div>
-        <div class="project">
-          <h3>Data Visualization</h3>
-          <p>Dashboard built with Tableau.</p>
-        </div>
-        <div class="project">
-          <h3>Web Development</h3>
-          <p>Responsive Bootstrap website.</p>
-        </div>
-        <div class="project">
-          <h3>Process Improvement</h3>
-          <p>AI-assisted business workflow redesign.</p>
+          <h3>FullBull Media Production</h3>
+          <p>Create larger than life visual media</p>
         </div>
       </div>
     </section>
@@ -251,15 +218,13 @@
       <h2 class="section-label">Contact</h2>
       <!-- ▼ REPLACE with your real links -->
       <ul class="contact">
-        <li>Email: <a href="mailto:u1234567@utah.edu">u1234567@utah.edu</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">linkedin.com/in/your-handle</a></li>
-        <li>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
+        <li>Email: <a href="mailto:u1234567@utah.edu">u1588952@umail.utah.edu</a></li>
       </ul>
     </section>
 
   </div>
 
-  <footer>© 2026 Jane Smith · Built for IS 3060</footer>
+
 
   <script>
     const btn  = document.querySelector('.nav-toggle');
